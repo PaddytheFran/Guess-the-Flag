@@ -34,8 +34,7 @@ class ViewController: UIViewController {
         
         askQuestion()
         
-        // Do any additional setup after loading the view, typically from a nib.
-    }
+          }
     
     func askQuestion(action: UIAlertAction! = nil) {
         countries = GKRandomSource.sharedRandom().arrayByShufflingObjects(in: countries) as! [String]
