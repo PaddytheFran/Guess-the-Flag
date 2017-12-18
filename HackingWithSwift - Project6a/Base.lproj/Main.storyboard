@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,36 +19,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FgL-7T-sJB">
-                                <rect key="frame" x="87.5" y="100" width="200" height="100"/>
-                                <state key="normal" image="us"/>
-                                <connections>
-                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6s3-Mi-3U3"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4MS-QN-sRv">
-                                <rect key="frame" x="87" y="230" width="200" height="100"/>
+                                <rect key="frame" x="87" y="315.5" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="4MS-QN-sRv" secondAttribute="height" multiplier="2:1" id="Fee-Va-VnE"/>
+                                </constraints>
                                 <state key="normal" image="us"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kYQ-Tp-or3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dgp-Pr-GWd">
-                                <rect key="frame" x="87" y="360" width="200" height="100"/>
+                                <rect key="frame" x="87" y="435.5" width="200" height="100"/>
                                 <state key="normal" image="us"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qb7-DA-BQS"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FgL-7T-sJB">
+                                <rect key="frame" x="87" y="195.5" width="200" height="100"/>
+                                <state key="normal" image="us"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6s3-Mi-3U3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="dgp-Pr-GWd" firstAttribute="centerX" secondItem="4MS-QN-sRv" secondAttribute="centerX" id="7Yy-Ab-hUN"/>
-                            <constraint firstItem="FgL-7T-sJB" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="QDa-IF-rHY"/>
-                            <constraint firstItem="dgp-Pr-GWd" firstAttribute="top" secondItem="4MS-QN-sRv" secondAttribute="bottom" constant="30" id="dda-hq-oU6"/>
-                            <constraint firstItem="4MS-QN-sRv" firstAttribute="centerX" secondItem="FgL-7T-sJB" secondAttribute="centerX" id="fGr-Ep-VRG"/>
-                            <constraint firstItem="FgL-7T-sJB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="36" id="gpl-RK-m75"/>
-                            <constraint firstItem="4MS-QN-sRv" firstAttribute="top" secondItem="FgL-7T-sJB" secondAttribute="bottom" constant="30" id="x6I-C5-56q"/>
+                            <constraint firstItem="FgL-7T-sJB" firstAttribute="centerX" secondItem="4MS-QN-sRv" secondAttribute="centerX" id="4NA-ji-vPC"/>
+                            <constraint firstItem="FgL-7T-sJB" firstAttribute="width" secondItem="4MS-QN-sRv" secondAttribute="height" multiplier="2:1" id="Ink-44-ph1"/>
+                            <constraint firstItem="4MS-QN-sRv" firstAttribute="width" secondItem="dgp-Pr-GWd" secondAttribute="height" multiplier="2:1" id="Lho-6i-nRn"/>
+                            <constraint firstItem="4MS-QN-sRv" firstAttribute="top" secondItem="FgL-7T-sJB" secondAttribute="bottom" constant="20" id="PoM-GU-W97"/>
+                            <constraint firstItem="dgp-Pr-GWd" firstAttribute="centerX" secondItem="4MS-QN-sRv" secondAttribute="centerX" id="dN6-UW-md5"/>
+                            <constraint firstItem="dgp-Pr-GWd" firstAttribute="top" secondItem="4MS-QN-sRv" secondAttribute="bottom" constant="20" id="fVZ-n3-mRS"/>
+                            <constraint firstItem="4MS-QN-sRv" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="p6h-zy-Shw"/>
+                            <constraint firstItem="4MS-QN-sRv" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="xit-mJ-fIK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
